@@ -1,0 +1,16 @@
+body {
+    font-family: "EB Garamond";
+    background-color: darkcyan;
+}
+
+h1 {
+    color: black;
+}
+
+h3 + p {
+    font-weight: bold;
+}
+
+a {
+    text-decoration: none;
+}
