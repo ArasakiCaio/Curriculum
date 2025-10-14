@@ -3,10 +3,6 @@ body {
     background-color: darkcyan;
 }
 
-h1 {
-    color: black;
-}
-
 h3 + p {
     font-weight: bold;
 }
