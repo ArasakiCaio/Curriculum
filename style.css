@@ -3,7 +3,7 @@ body {
     background-color: darkcyan;
 }
 
-h3 + p {
+h3.experiencia + p {
     font-weight: bold;
 }
 
