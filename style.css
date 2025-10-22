@@ -16,6 +16,14 @@ p {
     font-size: 1.2rem;
 }
 
+.icon {
+    width: 20px;
+    height: 20px;
+    display: inline-block;
+    position: relative;
+    top: 3px;
+}
+
 ul {
     font-size: 1.2rem;
     text-align: justify;
@@ -29,8 +37,14 @@ h2 {
     border-bottom: 1px solid black;
 }
 
+.experiencia h3 {
+    font-size: 1.3rem;
+    margin-bottom: 0;
+}
+
 .experiencia h3 + p {
-    font-weight: bold;
+    margin-top: 0;
+    color: #666666;
 }
 
 .conteudo-left, .conteudo-right {
@@ -39,8 +53,10 @@ h2 {
     margin: 0 auto;
     vertical-align: top;
 }
-/* 
-a:visited {
-    font-style: italic;
-    color: blue
-} */
+
+@media (max-width: 600px) {
+    body {
+        width: 90%;
+        /* padding-left: 10px; */
+    }
+}
