@@ -16,6 +16,14 @@ p {
     font-size: 1.2rem;
 }
 
+.icon {
+    width: 20px;
+    height: 20px;
+    display: inline-block;
+    position: relative;
+    top: 3px;
+}
+
 ul {
     font-size: 1.2rem;
     text-align: justify;
@@ -45,8 +53,10 @@ h2 {
     margin: 0 auto;
     vertical-align: top;
 }
-/* 
-a:visited {
-    font-style: italic;
-    color: blue
-} */
+
+@media (max-width: 600px) {
+    body {
+        width: 90%;
+        /* padding-left: 10px; */
+    }
+}
