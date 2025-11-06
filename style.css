@@ -24,6 +24,23 @@ p {
     top: 3px;
 }
 
+.experiencia-item {
+    position: relative;
+    padding-left: 62px;
+    min-height: 44px;
+}
+
+.experiencia-item .exp-icon {
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 50px;
+    height: 50px;
+    object-fit: contain;
+    pointer-events: none;
+}
+
 ul {
     font-size: 1.2rem;
     text-align: justify;
