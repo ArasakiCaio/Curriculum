@@ -47,57 +47,62 @@
     <section class="experiencia">
       <h2>Experiências</h2>
 
-      <h3 id="PET">
-        <a
-          href="https://www.petinfouem.com.br/"
-          title="PET-Informática"
-          target="_blank">
-          PET-Informática
-        </a>
-      </h3>
-      <p>Março de 2022 - Fevereiro de 2025</p>
+      <div class="experiencia-item">
+        <img src="images/pet-icon.png" alt="ícone do PET-Informática" class="exp-icon">
+        <h3 id="PET">
+          <a
+            href="https://www.petinfouem.com.br/"
+            title="PET-Informática"
+            target="_blank">
+            PET-Informática
+          </a>
+        </h3>
+        <p>Março de 2022 - Fevereiro de 2025</p>
+      </div>
 
       <p>
-        Como petiano bolsista no grupo PET-Informática, desenvolvi ... O Programa de Educação Tutorial (PET) é orientado a tríade de Ensino, Pesquisa e Extensão. 
-        O programa é regido pelo MEC e desenvolvido por discentes e um professor tutor em instituições 
-        de Ensino Superior do País. O programa desenvolve atividades nesses pilares como: iniciações 
-        científicas, cursos e workshops voltados à comunidade interna e externa, além de desenvolver 
-        <em>soft skills</em> a partir da organização interna do grupo.
+        Como petiano bolsista no grupo PET-Informática, um programa orientado a tríade de Ensino, Pesquisa e Extensão regido pelo MEC e 
+        desenvolvido por discentes e um professor tutor em instituições de Ensino Superior do País, desenvolvi atividades nesses 
+        pilares como: iniciações científicas, cursos e workshops na área de computação voltados à comunidade interna e externa, além de desenvolver 
+        <em>soft skills</em> por meio da organização interna do grupo.
       </p>
 
-      <h3 id="ACIM">
-        <a 
-          href="https://www.acim.com.br/"
-          title="Associação de Comerciantes de Maringá"
-          target="_blank">
-          Associação de Comerciantes de Maringá(ACIM)
-        </a>
-      </h3>
-      <p>Outubro de 2024 - Março de 2025</p>
+      <div class="experiencia-item">
+        <img src="images/acim-icon.png" alt="ícone da ACIM" class="exp-icon">
+        <h3 id="ACIM">
+          <a 
+            href="https://www.acim.com.br/"
+            title="Associação de Comerciantes de Maringá"
+            target="_blank">
+            Associação de Comerciantes de Maringá(ACIM)
+          </a>
+        </h3>
+        <p>Outubro de 2024 - Março de 2025</p>
+      </div>
 
       <p>
-        Como estagiário na <abbr title="Associação de Comerciantes de Maringá">ACIM</abbr> atuei como 
-        desenvolvedor erbé a uma associação com o objetivo de “Integrar e representar a comunidade promovendo 
-        o desenvolvimento, atuando como formadora de opinião e multiplicadora de conceitos de 
-        excelência empresarial”.
+        Como estagiário na <abbr title="Associação de Comerciantes de Maringá">ACIM</abbr>, uma associação com o objetivo de 
+        “Integrar e representar a comunidade promovendo o desenvolvimento, atuando como formadora de opinião e multiplicadora 
+        de conceitos de excelência empresarial”, atuei no desenvolvimento de um sistema web de 
+        <a href="#diagnosticoEmpresarial">diagnóstico empresarial</a>.
       </p>
 
-      <h3 id="HUB">
-        <a 
-          href="https://hubfronteira.tec.br/"
-          title="HUB de Inovação Fronteira"
-          target="_blank">
-          HUB de Inovação Fronteira
-        </a>
-      </h3>
-      <p>Outubro de 2024 - Até o momento</p>
+      <div class="experiencia-item">
+        <img src="images/hub-icon.png" alt="ícone do HUB" class="exp-icon">
+        <h3 id="HUB">
+          <a 
+            href="https://hubfronteira.tec.br/"
+            title="HUB de Inovação Fronteira"
+            target="_blank">
+            HUB de Inovação Fronteira
+          </a>
+        </h3>
+        <p>Outubro de 2024 - Até o momento</p>
+      </div>
 
       <p>
-        Como integrante do HUB de Inovação Fronteira é um ambiente voltado à promoção do desenvolvimento tecnológico 
-        por meio da transferência dos conhecimentos gerados na academia para empresas. O objetivo é apoiar 
-        a criação de empresas de base tecnológica, ampliar a prestação de serviços tecnológicos especializados, 
-        promover a transferência de know-how e desenvolver soluções inovadoras em parceria com 
-        diferentes setores.
+        Como integrante do HUB de Inovação Fronteira, o centro de inovação e empreendedorismo da Universidade Estadual de Maringá, 
+        conectando academia, mercado e sociedade, atuei na gestão, desenvolvimento e suporte de sistemas Web.
       </p>  
     </section>
 
@@ -123,8 +128,8 @@
           <li><strong>Linguagens de programação:</strong> JavaScript, Python, Lua, C</li>
           <li><strong>Dados:</strong> MySQL, PostgreSQL, MongoDB, scikit-learn, polars</li>
           <li><strong>Web:</strong> HTML/CSS, Django, Node.js, REST</li>
-          <li><strong>Metodologias:</strong>Ágil (Scrum, Kanban / Trello, Jira)</li>
-          <li><strong>Jogos:</strong> LÖVE</li>
+          <li><strong>Metodologias: </strong>Ágil (Scrum, Kanban / Trello, Jira, Github Projects)</li>
+          <li><strong>Jogos: </strong>LÖVE</li>
         </ul>
       </div>
     </section>
@@ -132,7 +137,7 @@
     <section class="projetos">
       <h2>Projetos</h2>
 
-      <h3>
+      <h3 id="diagnosticoEmpresarial">
         <a  
           href="https://github.com/ArasakiCaio/DiagnosticoEmpresarial" 
           title="Sistema de Diagnóstico Empresarial"
@@ -141,9 +146,10 @@
         </a>
       </h3>
       <p>
-          Especificação, desenvolvimento e gerenciamento de um sistema Web que fornece uma 
-          análise abrangente da empresa, permitindo que ela identifique áreas de melhoria e oportunidades 
-          de desenvolvimento.
+          Especificação, desenvolvimento e gerenciamento de um sistema Web que fornece uma análise abrangente da empresa, 
+          permitindo que ela identifique áreas de melhoria e oportunidades de desenvolvimento, além de mostrar a posição 
+          em relação ao mercado que a empresa ocupa. O sistema visa facilitar o processo de coleta de dados e geração 
+          de relatórios para apoiar a tomada de decisão estratégica.
       </p>
     </section>
 
