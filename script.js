@@ -22,6 +22,8 @@
 
             buttonPTBR && buttonPTBR.setAttribute('aria-pressed', String(file ==="index.html"));
             buttonEN && buttonEN.setAttribute('aria-pressed', String(file === 'index_en.html'));
+
+            history.pushState({ lang: file }, '', file === 'index_en.html' ? '?lang=en' : '?lang=ptbr');
         } catch (err) {
             console.error(err);
             alert('Não foi possível carregar a versão traduzida');
@@ -39,7 +41,7 @@
         document.title = originalTitle;
         buttonPTBR.setAttribute('aria-pressed', 'true');
         buttonEN.setAttribute('aria-pressed', 'false');
-        history.pushState({ lang: 'index' }, '', '?lang=pt');
+        history.pushState({ lang: 'index' }, '', '?lang=ptbr');
     });
 
     window.addEventListener('popstate', (ev) => {
