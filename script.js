@@ -20,7 +20,7 @@
 
             if (doc.title) document.title = doc.title;
 
-            buttonPTBR && buttonPTBR.setAttribute('aria-pressed', String(file ==="index_ptbr.html"));
+            buttonPTBR && buttonPTBR.setAttribute('aria-pressed', String(file ==="index.html"));
             buttonEN && buttonEN.setAttribute('aria-pressed', String(file === 'index_en.html'));
         } catch (err) {
             console.error(err);
@@ -39,7 +39,7 @@
         document.title = originalTitle;
         buttonPTBR.setAttribute('aria-pressed', 'true');
         buttonEN.setAttribute('aria-pressed', 'false');
-        history.pushState({ lang: 'index_ptbr' }, '', '?lang=pt');
+        history.pushState({ lang: 'index' }, '', '?lang=pt');
     });
 
     window.addEventListener('popstate', (ev) => {
