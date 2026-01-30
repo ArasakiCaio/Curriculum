@@ -103,3 +103,13 @@ h2 {
         padding: 0 5px;
     }
 }
+
+@media print {
+    body {
+        width: 90%;
+    }
+
+    .idiomas, .experiencia-item {
+        break-inside: avoid;
+    }
+}
