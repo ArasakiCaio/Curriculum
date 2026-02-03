@@ -63,13 +63,13 @@ h2 {
     color: #666666;
 }
 
-.experiencia-item {
+.experiencia-cabecalho {
     position: relative;
     padding-left: 62px;
     min-height: 44px;
 }
 
-.experiencia-item .exp-icon {
+.experiencia-cabecalho .exp-icon {
     position: absolute;
     left: 0;
     top: 50%;
@@ -113,7 +113,7 @@ h2 {
         display: none;
     }
 
-    .idiomas, .experiencia-item {
+    informacoes-basicas, .experiencia-item, .competencias, .projetos-item, .idiomas {
         break-inside: avoid;
     }
 }
