@@ -8,6 +8,7 @@
 
     const originalHTML = main.innerHTML;
     const originalTitle = document.title
+    const originalPrintText = buttonPrint ? buttonPrint.textContent : '';
 
     async function loadFile(file) {
         try {
@@ -23,6 +24,9 @@
 
             buttonPTBR && buttonPTBR.setAttribute('aria-pressed', String(file ==="index.html"));
             buttonEN && buttonEN.setAttribute('aria-pressed', String(file === 'index_en.html'));
+
+            const newPrint = doc.getElementById('button-print');
+            if (buttonPrint && newPrint) buttonPrint.textContent = newPrint.textContent;
 
             history.pushState({ lang: file }, '', file === 'index_en.html' ? '?lang=en' : '?lang=ptbr');
         } catch (err) {
@@ -42,6 +46,7 @@
         document.title = originalTitle;
         buttonPTBR.setAttribute('aria-pressed', 'true');
         buttonEN.setAttribute('aria-pressed', 'false');
+        buttonPrint && (buttonPrint.textContent = originalPrintText);
         history.pushState({ lang: 'index' }, '', '?lang=ptbr');
     });
 
@@ -57,6 +62,7 @@
             document.title = originalTitle;
             buttonPTBR.setAttribute('aria-pressed', 'true');
             buttonEN.setAttribute('aria-pressed', 'false');
+            buttonPrint && (buttonPrint.textContent = originalPrintText);
             return;
         }
         if (state.lang === 'index_en.html') loadFile('index_en.html');
@@ -65,6 +71,7 @@
             document.title = originalTitle;
             buttonPTBR.setAttribute('aria-pressed', 'true');
             buttonEN.setAttribute('aria-pressed', 'false');
+            buttonPrint && (buttonPrint.textContent = originalPrintText);
         }
     })
     
