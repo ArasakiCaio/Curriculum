@@ -54,13 +54,22 @@ h2 {
     pointer-events: none;
 }
 
-.experiencia-item {
+.formacao-item p {
+    margin-bottom: 0;
+}
+
+.formacao-item p + p {
+    margin-top: 0;
+    color: #666666;
+}
+
+.experiencia-cabecalho {
     position: relative;
     padding-left: 62px;
     min-height: 44px;
 }
 
-.experiencia-item .exp-icon {
+.experiencia-cabecalho .exp-icon {
     position: absolute;
     left: 0;
     top: 50%;
@@ -69,15 +78,6 @@ h2 {
     height: 50px;
     object-fit: contain;
     pointer-events: none;
-}
-
-.formacao-item p {
-    margin-bottom: 0;
-}
-
-.formacao-item p + p {
-    margin-top: 0;
-    color: #666666;
 }
 
 .experiencia h3 {
@@ -109,7 +109,11 @@ h2 {
         width: 90%;
     }
 
-    .idiomas, .experiencia-item {
+    .lang-switch {
+        display: none;
+    }
+
+    informacoes-basicas, .experiencia-item, .competencias, .projetos-item, .idiomas {
         break-inside: avoid;
     }
 }
