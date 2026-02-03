@@ -54,6 +54,15 @@ h2 {
     pointer-events: none;
 }
 
+.formacao-item p {
+    margin-bottom: 0;
+}
+
+.formacao-item p + p {
+    margin-top: 0;
+    color: #666666;
+}
+
 .experiencia-item {
     position: relative;
     padding-left: 62px;
@@ -69,15 +78,6 @@ h2 {
     height: 50px;
     object-fit: contain;
     pointer-events: none;
-}
-
-.formacao-item p {
-    margin-bottom: 0;
-}
-
-.formacao-item p + p {
-    margin-top: 0;
-    color: #666666;
 }
 
 .experiencia h3 {
