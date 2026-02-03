@@ -109,6 +109,10 @@ h2 {
         width: 90%;
     }
 
+    .lang-switch {
+        display: none;
+    }
+
     .idiomas, .experiencia-item {
         break-inside: avoid;
     }
