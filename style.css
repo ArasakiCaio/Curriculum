@@ -37,10 +37,20 @@ h2 {
     top: 3px;
 }
 
+.lang-switch {
+    display: flex;
+    align-items: left;
+    gap: 8px;
+}
+
+.lang-switch #button-print {
+    margin-left: auto;
+}
+
 .formacao-item {
     position: relative;
     padding-left: 62px;
-    min-height: 44px;;
+    min-height: 44px;
 }
 
 .formacao-item .formacao-icon {
@@ -113,7 +123,7 @@ h2 {
         display: none;
     }
 
-    informacoes-basicas, .experiencia-item, .competencias, .projetos-item, .idiomas {
+    .informacoes-basicas, .experiencia-item, .competencias, .projetos-item, .idiomas {
         break-inside: avoid;
     }
 }

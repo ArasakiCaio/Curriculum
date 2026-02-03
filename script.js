@@ -4,6 +4,7 @@
 
     const buttonPTBR = document.getElementById('button-ptbr');
     const buttonEN = document.getElementById('button-en');
+    const buttonPrint = document.getElementById('button-print');
 
     const originalHTML = main.innerHTML;
     const originalTitle = document.title
@@ -43,6 +44,11 @@
         buttonEN.setAttribute('aria-pressed', 'false');
         history.pushState({ lang: 'index' }, '', '?lang=ptbr');
     });
+
+    buttonPrint && buttonPrint.addEventListener('click', (e) => {
+        e.preventDefault();
+        window.print();
+    })
 
     window.addEventListener('popstate', (ev) => {
         const state = ev.state;
