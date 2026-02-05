@@ -117,13 +117,14 @@ h2 {
 @media print {
     body {
         width: 90%;
+        padding-left: 0;
     }
 
-    .lang-switch {
+    .lang-switch, .sobre-mim, .informacoes-basicas h2 {
         display: none;
     }
 
-    .informacoes-basicas, .experiencia-item, .competencias, .projetos-item, .idiomas {
+    .sobre-mim, .informacoes-basicas, .experiencia-item, .competencias, .projetos-item, .idiomas {
         break-inside: avoid;
     }
 }
